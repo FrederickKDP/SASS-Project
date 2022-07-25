@@ -1,0 +1,50 @@
+$primary-color: #584AFD;
+$secondary-color: #daa5be;
+$read-color: #dcdeeb;
+$highlight-color: #cf7d36;
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+  
+
+#grid-center{
+    background-color: $read-color;
+}
+
+
+// Optional content
+@media only screen and (max-width: 800px) {
+    %grid-sides{
+        display: none;
+    }
+    
+    #grid-center{
+        width: 100vw;
+    }
+
+    #grid-left{
+        @extend %grid-sides;
+    }
+
+    #grid-right{
+        @extend %grid-sides;
+    }
+}
+
+%sides-shared{
+    background-color: $secondary-color;
+}
+
+#grid-left{
+    @extend %sides-shared;
+}
+
+
+#grid-right{
+    @extend %sides-shared;
+}

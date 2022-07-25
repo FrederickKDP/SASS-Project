@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  margin: 0.25em;
+  margin-bottom: 0.1em;
+  text-align: center;
+}
+
+.subhead-h1 {
+  text-align: center;
+  display: block;
+  margin-bottom: 2em;
+}
+
+footer {
+  margin-top: 1em;
+  text-align: center;
+  font-size: small;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#grid-center {
+  background-color: #dcdeeb;
+}
+
+@media only screen and (max-width: 800px) {
+  #grid-right, #grid-left {
+    display: none;
+  }
+  #grid-center {
+    width: 100vw;
+  }
+}
+#grid-right, #grid-left {
+  background-color: #daa5be;
+}
+
+/*Developed by Frederick Kramer Dal Pra
+A01082868 BCIT
+CC4.0*//*# sourceMappingURL=main.css.map */

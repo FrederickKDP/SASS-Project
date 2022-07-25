@@ -1,0 +1,27 @@
+// BODY
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    margin: 0.25em; //container already has padding
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
+.subhead-h1{
+    text-align: center;
+    display: block;
+    margin-bottom: 2em; //container already has padding
+}
+
+footer{
+    margin-top: 1em;
+    text-align: center;
+    font-size: small;
+}
+
+// END BODY

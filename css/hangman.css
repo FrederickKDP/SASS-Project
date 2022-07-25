@@ -1,0 +1,77 @@
+header {
+  background-color: #584AFD;
+  color: #dcdeeb;
+  padding: 5px;
+  -webkit-animation-name: pop-title;
+          animation-name: pop-title;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes pop-title {
+  0% {
+    color: #584AFD;
+    letter-spacing: 0.15em;
+  }
+  100% {
+    color: #dcdeeb;
+    letter-spacing: normal;
+  }
+}
+
+@keyframes pop-title {
+  0% {
+    color: #584AFD;
+    letter-spacing: 0.15em;
+  }
+  100% {
+    color: #dcdeeb;
+    letter-spacing: normal;
+  }
+}
+#hidden-word {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3em;
+  margin: 0.5em;
+}
+
+#btn-keyboard {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-keyboard {
+  font-size: 1.5em;
+  margin: 2px;
+}
+
+#img-mistake {
+  max-width: 30vw;
+  min-width: 30vh;
+  max-height: 50vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 5px;
+}
+
+#wrong-letters {
+  font-size: 2em;
+  text-align: center;
+}
+
+#container-hangman {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 1em 2em;
+}
+
+#btn-try-again {
+  float: right;
+}
+
+#chances-left-txt {
+  text-align: center;
+}/*# sourceMappingURL=hangman.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>COMP2132 - Hangman game"</title>
+        <meta name="keywords" content="Student, BCIT, CST, CSC">
+        <meta name="description" content="hangman game">
+        <meta name="author" content="Frederick Kramer Dal Prá">
+        <link type="text/plain" rel="author" href="humans.txt" />
+        <META NAME="robots" CONTENT="noindex,nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/hangman.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="grid">
+            <div id="grid-left">
+                
+            </div>
+            <div id="grid-center">
+                <main>
+                    <header>
+                        <h1>Hangman!</h1><br>
+                        <small class="subhead-h1">Figure out the hidden word! More mistakes makes the dog smaller!</small>
+                    </header>
+    
+                    <section id="container-hangman">
+                        <div id="hangman-left">
+                            <div id="container-img-mistake"><img id="img-mistake" alt="lives" src=""></div>
+                            <div id="wrong-letters"> </div>
+                            <p id="chances-left-txt">Chances left: <ins id="chances-left">0</ins></p>
+                        </div>
+                        <div id="hangman-right">
+                            <em id="result"></em>
+                            <p>Hint: <ins id="hint"></ins></p>
+                            <p id="hidden-word"></p>
+                            <div id="btn-keyboard"></div><br>
+                            <div id="container-try-again"></div>
+                        </div>
+                    </section>
+                </main>
+    
+                <footer>
+                    <p>Photos rights belong to <a href="https://www.pexels.com/">Pexels</a> and their authors</p>
+                    <p>Other assets available on CC4.0. Developed by Frederick Kramer Dal Prá</p>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License"
+                            style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work
+                    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons
+                        Attribution 4.0 International License</a>.
+                </footer>
+
+            </div>
+            <div id="grid-right">
+
+            </div>
+            <script src="scripts/hangman.js" async defer></script>
+        </div>
+    </body>
+</html>
